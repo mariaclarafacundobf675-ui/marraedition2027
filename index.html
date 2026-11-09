@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="MARRA 2ª EDIÇÃO — 15 de janeiro de 2027, no Hytti Pub, Fortaleza. Garanta seu ingresso.">
+  <title>MARRA — 2ª EDIÇÃO | 15.01.2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand-mini" href="#inicio" aria-label="MARRA início">M<span>.</span></a>
+    <a class="top-link" href="#ingressos">GARANTA SEU INGRESSO <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="MARRA 2ª edição">
+      <div class="hero-content">
+        <img
+          class="hero-logo"
+          src="assets/marra-logo.png"
+          alt="MARRA — logo vermelha metálica"
+          fetchpriority="high"
+        >
+
+        <div class="hero-count">
+          <div class="section-kicker">A CONTAGEM COMEÇOU</div>
+          <h1>O TEMPO ESTÁ <span>PASSANDO.</span></h1>
+          <div class="countdown" aria-label="Contagem regressiva para o evento">
+            <div class="count-cell"><strong id="days">000</strong><span>DIAS</span></div>
+            <div class="count-cell"><strong id="hours">00</strong><span>HORAS</span></div>
+            <div class="count-cell"><strong id="minutes">00</strong><span>MIN</span></div>
+            <div class="count-cell"><strong id="seconds">00</strong><span>SEG</span></div>
+          </div>
+          <p class="count-note" id="count-note">15 DE JANEIRO DE 2027 · ÀS 22H</p>
+        </div>
+
+        <div class="hero-event-info">
+          <span>2ª EDIÇÃO</span>
+          <span>15 JAN 2027</span>
+          <span>22H ÀS 04H</span>
+          <span>HYTTI PUB · FORTALEZA — CE</span>
+        </div>
+
+        <a class="primary-btn hero-cta" href="#ingressos">QUERO MEU INGRESSO <span>↗</span></a>
+      </div>
+      <a class="scroll-cue" href="#sobre">DESLIZE PARA DESCOBRIR <span>↓</span></a>
+    </section>
+
+    <section class="event-section section-wrap" id="sobre">
+      <div class="section-kicker">MARQUE NA AGENDA</div>
+      <h2>UMA EXPERIÊNCIA <span>INESQUECÍVEL.</span></h2>
+      <div class="event-grid">
+        <article class="event-card"><span class="card-icon">◷</span><small>DATA &amp; HORÁRIO</small><strong>15 JAN 2027</strong><p>22H ÀS 04H</p></article>
+        <article class="event-card"><span class="card-icon">⌖</span><small>LOCAL</small><strong>HYTTI PUB</strong><p>FORTALEZA — CEARÁ</p></article>
+        <article class="event-card"><span class="card-icon">♫</span><small>ATRAÇÃO</small><strong>DJ</strong><p>O SOM DA NOITE</p></article>
+        <article class="event-card"><span class="card-icon">✦</span><small>OPEN BAR</small><strong>SIM</strong><p>PARA MAIORES DE 18 ANOS</p></article>
+      </div>
+      <a class="outline-btn maps-btn" href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x7c7471eb46ee0f5:0x3d96b1d0d1acbbba?entry=s&amp;sa=X&amp;ved=2ahUKEwik7LnqzPeXAxWRlJUCHaLPM-kQ4kB6BAgdEAA&amp;hl=pt" target="_blank" rel="noopener noreferrer">COMO CHEGAR <span>↗</span></a>
+    </section>
+
+    <section class="rules-band">
+      <div class="rules-inner">
+        <div><span class="section-kicker">ANTES DE GARANTIR</span><h2>ATENÇÃO ÀS <span>REGRAS.</span></h2></div>
+        <div class="rule"><strong>16+</strong><p>Entrada permitida a partir de 16 anos.</p></div>
+        <div class="rule"><strong>18+</strong><p>Bebidas alcoólicas permitidas somente para maiores de 18 anos.</p></div>
+      </div>
+    </section>
+
+    <section class="tickets-section section-wrap" id="ingressos">
+      <div class="section-kicker">PRIMEIRO LOTE · VAGAS LIMITADAS</div>
+      <h2>ESCOLHA SEU <span>INGRESSO.</span></h2>
+      <p class="section-intro">Garanta sua entrada para a MARRA 2ª EDIÇÃO.</p>
+
+      <div class="purchase-layout">
+        <div class="ticket-options">
+          <div class="ticket-row">
+            <div><span class="ticket-type">MASCULINO</span><strong>R$ 50,00</strong><small>PRIMEIRO LOTE</small></div>
+            <div class="quantity"><button type="button" class="qty-btn" data-target="male" data-step="-1" aria-label="Diminuir ingressos masculinos">−</button><output id="male-count">0</output><button type="button" class="qty-btn" data-target="male" data-step="1" aria-label="Aumentar ingressos masculinos">+</button></div>
+          </div>
+          <div class="ticket-row">
+            <div><span class="ticket-type">FEMININO</span><strong>R$ 45,00</strong><small>PRIMEIRO LOTE</small></div>
+            <div class="quantity"><button type="button" class="qty-btn" data-target="female" data-step="-1" aria-label="Diminuir ingressos femininos">−</button><output id="female-count">0</output><button type="button" class="qty-btn" data-target="female" data-step="1" aria-label="Aumentar ingressos femininos">+</button></div>
+          </div>
+          <div class="lounge-booking">
+            <div class="lounge-heading">
+              <span class="order-label">EXPERIÊNCIA EXCLUSIVA</span>
+              <h3>RESERVE SEU <span>LOUNGE.</span></h3>
+              <p>São apenas 3 lounges disponíveis, por R$ 1.400,00 cada. Selecione o lounge desejado e escolha a bebida inclusa.</p>
+            </div>
+            <div class="lounge-grid">
+              <article class="lounge-option">
+                <label class="lounge-select"><input type="checkbox" class="lounge-check" data-lounge="1"><span><strong>LOUNGE 01</strong><small>R$ 1.400,00</small></span></label>
+                <label class="drink-label" for="lounge-drink-1">ESCOLHA 20 UNIDADES</label>
+                <select id="lounge-drink-1" class="lounge-drink" disabled>
+                  <option value="Heineken">Heineken</option><option value="Beats">Beats</option><option value="Ice">Ice</option>
+                </select>
+              </article>
+              <article class="lounge-option">
+                <label class="lounge-select"><input type="checkbox" class="lounge-check" data-lounge="2"><span><strong>LOUNGE 02</strong><small>R$ 1.400,00</small></span></label>
+                <label class="drink-label" for="lounge-drink-2">ESCOLHA 20 UNIDADES</label>
+                <select id="lounge-drink-2" class="lounge-drink" disabled>
+                  <option value="Heineken">Heineken</option><option value="Beats">Beats</option><option value="Ice">Ice</option>
+                </select>
+              </article>
+              <article class="lounge-option">
+                <label class="lounge-select"><input type="checkbox" class="lounge-check" data-lounge="3"><span><strong>LOUNGE 03</strong><small>R$ 1.400,00</small></span></label>
+                <label class="drink-label" for="lounge-drink-3">ESCOLHA 20 UNIDADES</label>
+                <select id="lounge-drink-3" class="lounge-drink" disabled>
+                  <option value="Heineken">Heineken</option><option value="Beats">Beats</option><option value="Ice">Ice</option>
+                </select>
+              </article>
+            </div>
+            <div class="lounge-includes">
+              <strong>CADA LOUNGE INCLUI</strong>
+              <p>20 unidades da bebida escolhida (Heineken, Beats ou Ice), 2 garrafas de Absolut e energético.</p>
+              <p>Capacidade máxima de 10 pessoas por lounge. Todos recebem pulseiras de identificação, individuais e intransferíveis. A pulseira não pode ser retirada nem repassada a outra pessoa.</p>
+              <p class="lounge-age">Venda e consumo de bebidas alcoólicas somente para maiores de 18 anos.</p>
+            </div>
+          </div>
+          <div class="buyer-fields">
+            <label for="buyer-name">NOME COMPLETO</label>
+            <input id="buyer-name" type="text" placeholder="Digite seu nome completo" autocomplete="name" maxlength="100">
+            <label for="buyer-age">IDADE</label>
+            <input id="buyer-age" type="number" min="16" max="99" placeholder="Sua idade" inputmode="numeric">
+          </div>
+        </div>
+
+        <aside class="order-card">
+          <span class="order-label">RESUMO DO PEDIDO</span>
+          <div class="summary-line"><span>Ingressos</span><strong id="total-tickets">0</strong></div>
+          <div class="summary-line"><span>Masculino</span><strong id="male-summary">0</strong></div>
+          <div class="summary-line"><span>Feminino</span><strong id="female-summary">0</strong></div>
+          <div class="summary-line"><span>Lounges</span><strong id="lounge-summary">0</strong></div>
+          <div class="summary-line"><span>Itens do lounge</span><strong id="lounge-drink-summary">—</strong></div>
+          <div class="total-line"><span>TOTAL A PAGAR</span><strong id="total-price">R$ 0,00</strong></div>
+          <p class="order-hint">O valor é atualizado automaticamente conforme a quantidade escolhida.</p>
+        </aside>
+      </div>
+
+      <div class="pix-panel">
+        <div class="pix-heading"><span class="pix-symbol">PIX</span><div><span class="section-kicker">PAGAMENTO</span><h3>FAÇA SEU <span>PIX.</span></h3></div></div>
+        <p>Copie a chave Pix abaixo e pague exatamente o valor total do seu pedido.</p>
+        <div class="pix-key"><span id="pix-key">85986882730</span><button type="button" id="copy-pix" class="copy-btn">COPIAR CHAVE <span>▣</span></button></div>
+        <div class="pay-total"><span>VALOR DO SEU PIX</span><strong id="pix-total">R$ 0,00</strong></div>
+        <p class="proof-note">Após o pagamento, guarde o comprovante. Na próxima etapa, envie-o pelo WhatsApp para conferência.</p>
+        <button type="button" id="confirm-whatsapp" class="primary-btn confirm-btn">CONFIRMAR COMPRA PELO WHATSAPP <span>↗</span></button>
+        <p class="manual-note">A confirmação do ingresso é manual e acontece somente após a verificação do comprovante pelo responsável.</p>
+        <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="community-section section-wrap" id="grupos">
+      <div class="section-kicker">FAÇA PARTE DA MARRA</div>
+      <h2>ENTRE NO NOSSO <span>GRUPO.</span></h2>
+      <p class="section-intro">Acompanhe os avisos e novidades da MARRA pelos nossos grupos oficiais no WhatsApp.</p>
+      <div class="group-grid">
+        <a class="group-card" href="https://chat.whatsapp.com/JTed47JR4CM8shCFdxdySU?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4&amp;iam=2" target="_blank" rel="noopener noreferrer"><span class="group-number">GRUPO 01</span><strong>ENTRAR NO GRUPO 1</strong><span class="group-arrow">↗</span></a>
+        <a class="group-card" href="https://chat.whatsapp.com/Hrf3oeItKEwAjxUOllsglz?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4&amp;iam=2" target="_blank" rel="noopener noreferrer"><span class="group-number">GRUPO 02</span><strong>ENTRAR NO GRUPO 2</strong><span class="group-arrow">↗</span></a>
+      </div>
+      <div class="contact-card">
+        <div><span class="section-kicker">DÚVIDAS E INGRESSOS</span><h3>FALE COM A <span>ORGANIZAÇÃO.</span></h3><p>Se tiver alguma dúvida ou precisar de ajuda para comprar seu ingresso, fale com a gente pelo WhatsApp.</p></div>
+        <a class="primary-btn contact-btn" href="https://wa.me/5585986882730" target="_blank" rel="noopener noreferrer">CHAMAR NO WHATSAPP <span>↗</span></a>
+        <strong class="contact-number">(85) 98688-2730</strong>
+      </div>
+    </section>
+
+    <section class="refund-section">
+      <div class="refund-inner"><span class="refund-mark">!</span><div><span class="section-kicker">IMPORTANTE</span><h2>ATENÇÃO À POLÍTICA DE <span>REEMBOLSO.</span></h2><p>Não trabalhamos com reembolsos. Antes de realizar o pagamento, confira atentamente a data, o local, as regras e as informações do evento.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/marra-logo.png" alt="MARRA" class="footer-logo">
+    <p>MARRA — 2ª EDIÇÃO</p>
+    <span>15.01.2027 · HYTTI PUB · FORTALEZA — CE</span>
+    <small>© 2027 MARRA. TODOS OS DIREITOS RESERVADOS.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
